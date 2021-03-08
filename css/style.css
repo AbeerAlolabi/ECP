@@ -230,15 +230,16 @@ main > h1 > span{
   
   /* The Close Button */
   .close {
-    color: #000;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    opacity: 0.8;
   }
   
   .close:hover,
   .close:focus {
-    color: white;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
   }
@@ -250,7 +251,7 @@ main > h1 > span{
   }
 
   .modal-body{
-      color: rgb(4,63,61);
+      color: rgb(36, 39, 39);
       font-size: large;
   }
 
@@ -297,10 +298,12 @@ footer{
     background-color:  rgb(6,78,74) ;
     margin-bottom: 0px;
     padding: 25px 0px;
+    display: flex;
 }
 
 footer h3 {
     color:rgb(255,254,246);
+    font-size: 26px ;
 }
 
 footer p{
@@ -323,7 +326,8 @@ footer p{
    border: 1px solid rgba(244, 250, 246,0.8);
    padding: 3px;
    border-radius: 50%;
-   font-size: 25px;
+   font-size: 20px;
+   align-items: flex-endS;
 }
 
 .material-icons:hover{
