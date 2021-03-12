@@ -1,0 +1,333 @@
+body{
+    font-family: Rubik,'Times New Roman', Times, serif;
+}
+
+/* header */
+
+header{
+    margin-right: 0px;
+    padding-right: 0px;
+}
+img{
+    float: right;
+    vertical-align: middle;
+}
+
+.right_header{
+    background-image: url('../images/header.jpg');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 3%;
+    border: 2px solid #117272;
+    margin-top: 1%;
+    box-shadow: 2px 4px rgba(55, 55, 55,0.3);
+}
+
+.left_header{
+    margin-top: 1.5%;
+    color: rgb(4,63,61);
+    font-weight: bold;
+  
+}
+
+.left_header h3{
+    text-align: center;
+    background-color: rgb(9, 153, 144);
+    color: rgb(255,254,246);
+    border-radius: 5%;
+}
+
+/* style breadcrumb */
+
+ul.breadcrumb{
+    list-style: none;
+    background-color: #eee;
+    padding-left: 12vw;
+}
+
+ul.breadcrumb li{
+    display: inline; 
+    font-size: 15px;
+}
+ul.breadcrumb li+li:before{
+    padding: 8px;
+    color: #064E4A;
+    content: "/\00a0";
+}
+ul.breadcrumb li a{
+    color:#064E4A;
+}
+
+ul.breadcrumb li a.current{
+    color:rgb(255,139,0);
+}
+/* end breadcrumb style */
+
+.left_header span{
+    font-size: 120%;
+
+}
+
+.email_1{
+    float: center;
+    text-align: center;
+}
+
+.right_header p {
+    visibility: hidden;
+}
+
+header h6 {
+    text-align: center;
+    color: rgb(136, 132, 132);
+    margin-top: 2%;
+}
+
+
+/* styling main section  */
+main > h1{
+    color:  rgb(255,139,0);
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+
+}
+
+main > h1 > span{
+    border-bottom: 1px solid  rgb(3,153,144);
+    
+}
+
+.blog_main{
+    margin: 30px;
+    padding: 22px 14px ;
+    border-radius: 3%;
+    color: rgb(4,63,61);
+    border: 2px solid rgb(3,153,144);
+    text-align: center;
+}
+
+.blog_main:hover{
+    border: 2px solid rgb(255,139,0);
+    position: relative;
+    top: -5px;
+    left: -7px;
+    box-shadow: 5px 7px 5px rgba(4,63,61,0.5);
+}
+
+.blog_main h3{
+    color: rgb(255,139,0);
+}
+
+.blog_main > img{
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0px auto;
+    border-left: 2px solid rgba(100,100,100,0.5);
+    border-right: 2px solid rgba(100,100,100,0.5);
+    float: none;
+    display: block;
+}
+
+.main_button{
+    text-align: center;
+}
+
+.main_button button{
+    color: rgb(244, 250, 246);
+    background-color: rgb(9, 153, 144);
+    margin: 35px 0px 65px 0px;
+    padding: 7px 19px;
+    border-radius: 5%;
+}
+
+.main_button button:hover{
+    color: rgb(244, 250, 246);
+    background-color:rgb(255,139,0); 
+    border-color: wheat;
+}
+
+.continue_reading_btn{
+    margin-top: 17px;
+    color: rgb(9, 153, 144);
+    border-color: rgb(9, 153, 144);
+    border-radius: 15px;
+}
+
+.continue_reading_btn:hover{
+    color: rgb(255,139,0);
+    border-color: rgb(255,139,0);
+}
+@media only screen and (max-width: 800px){
+
+}
+
+/* styling modal */
+    /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.2s;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    top:18%;
+    left: 12.5%;
+    background-color: #fefefe;
+    width: 75%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.2s;
+    animation-name: slideIn;
+    animation-duration: 0.2s;
+    border: 1.5px solid rgb(255,139,0);
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {    
+    padding: 5px 16px;
+    background-color: #117272;
+    color: #fefefe;
+  }
+
+  .modal-body{
+      color: rgb(36, 39, 39);
+      font-size: large;
+  }
+
+  .img_modal{
+        max-width: 400px;
+        width: 100%;
+  }
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(255,139,0);
+    background-image:linear-gradient(rgb(4,63,61),#117272);
+    text-decoration: underline;
+  }
+
+  .modal-footer a{
+      color: rgb(255,139,0);
+  }
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+/* stlye user upload button */
+  .user_add_btn{
+      background-image: url('../images/head.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 75px  75px  65px  75px;
+      text-align: center;
+      margin: 20px 0px 40px 0px;
+      color: #FFFEF6;
+  }
+
+
+.user_add_btn h4{
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 4px 6px rgb(255,255,255,0.6)
+}
+
+.add_btn{
+    background-color: rgb(255,139,0);
+    color: white;
+    border-radius: 18%;
+    margin-top: 30px;
+    padding: 5px 12px;
+}
+
+.add_btn:hover{
+    background-color: white;
+    color: rgb(255,139,0);
+    font-weight: 600;
+    border-color: rgb(255,139,0);
+}
+
+/* style user upload page */
+
+.userAddBlog{
+    padding: 25px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border: 3px solid #039990;
+    color: #043F3D;
+    font-size: 18px;
+}
+textarea{
+    overflow: auto;
+    width: 88%;
+}
+
+.userAddBlog h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 4px 5px rgba(55,55,55,0.3) ;
+    border-bottom: 1px solid #039990;
+    background-color: #039990;
+}
+
+input[type=submit] , input[type=reset]{
+    color: white;
+    width: 120px;
+    background-color: rgb(255,139,0);
+    border-radius: 8%;
+    box-shadow: 1px 2px 5px #555;
+}
+
+input[type=submit]:hover , input[type=reset]:hover{
+    background-color: #039990;
+    box-shadow: 2px 4px 10px #555;
+}
+
+#blogTitle{
+    width: 90%;
+}

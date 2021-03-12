@@ -43,26 +43,26 @@
               <div class="row justify-content-center">
                 <div class="col-12 col-md-4">
                   <label for="username">Full Name:</label><br>
-                  <input type="text" id="username" title="Blog writer name"/>
+                  <input type="text" id="username" title="Blog writer name, use only letters[a-z]" pattern="[A-Za-z]{1,40}" maxlength="40" required/>
                 </div>
                 <div class="col-12 col-md-4">
                   <label for="userEmail">Email:</label><br>
-                  <input type="email" id="userEmail" />
+                  <input type="email" id="userEmail" required placeholder="example@example.com"/> <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ -->
                 </div>
                 <div class="col-12 col-md-4">
                   <label for="userPhone">Phone:</label><br>
-                  <input type="text" id="userPhone" />
+                  <input type="text" id="userPhone"  pattern="\+[0-9]{3}-[0-9]{3}-[0-9]{4}" required title="it should be in the form (+333-333-9999)" placeholder="+333-333-4444" />
                 </div>
               </div>
               <br>
               <div class="row justify-content-center">
                 <div class="col-12 col-md-4">
-                  <label for="blogTitle">Blog Title:</label><br>
-                  <input type="text" id="blogTitle" />
+                  <label for="blogTitle">Title:</label><br>
+                  <input type="text" id="blogTitle" required title="please add a title for the blog"/>
                 </div>
                 <div class="col-12 col-md-4">
                   <label for="image">Image:</label><br>
-                  <input type="file" id="image" title="please upload an image" />
+                  <input type="file" id="image" title="please upload an image" accept="image/gif, image/jpeg, image/png" required />
                 </div>
                 <div class="col-12 col-md-4">
                 </div>
@@ -70,8 +70,8 @@
               <br>
               <div class="row justify-content-center">
                 <div class="col-12">
-                  <label for="blogText"> Blog :</label><br>
-                  <textarea id="blogText"  rows="5">
+                  <label for="blogText"> Description:</label><br>
+                  <textarea id="blogText"  rows="5" required>
                   </textarea>
                 </div>
               </div>
