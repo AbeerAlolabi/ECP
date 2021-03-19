@@ -227,17 +227,6 @@ main > h1 > span{
         max-width: 400px;
         width: 100%;
   }
-
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: rgb(255,139,0);
-    background-image:linear-gradient(rgb(4,63,61),#117272);
-    text-decoration: underline;
-  }
-
-  .modal-footer a{
-      color: rgb(255,139,0);
-  }
   /* Add Animation */
   @-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0} 
@@ -330,4 +319,37 @@ input[type=submit]:hover , input[type=reset]:hover{
 
 #blogTitle{
     width: 90%;
+}
+
+/* login page styling */
+.Content{
+    font-size: 22px;
+    font-weight: 600;
+    border: 2px solid #ff8b00;
+    padding: 5vh;
+    border-radius: 5%;
+    /* margin: 20vh auto; */
+    margin: 5px auto;
+    text-align: left;
+    box-shadow: 4px 8px 10px gray;
+    
+}
+body.login{
+    
+    background-image: linear-gradient(145deg, #039990, transparent);
+    
+}
+.login a{
+    text-decoration: underline;
+    font-size: 16px;
+}
+.login img{
+    margin-top: 55px; 
+    float: left;
+}
+
+.login input[type=submit]:hover{
+    background-color: white;
+    color:#ff8b00 ;
+    font-weight: 600;
 }

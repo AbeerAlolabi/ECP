@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Us Page</title>
+        <title>Admin Login</title>
         <link rel="icon" href="images/icon.png" type="image/icon type">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,16 +32,31 @@
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#"class="current">Contactus</a></li>
+              <li><a href="#"class="current">Admin Login</a></li>
           </ul>
         </div>
       
-        <main>
-          <div class="container">
-            
-          </div>  
+        <main class="login">
+          <div class="container ">
+            <div class="row justify-content-center ">
+              <div class="col-md-5 col-12 Content">
+                <form>
+                  <label for="email">
+                  Email:
+                  </label><br>
+                  <input type="email" id="email" name="email" placeholder="example@example.com" /><br><br>
+  
+                  <label for="password">Password:</label><br>
+                  <input type="password" name="password" id="password" /><br>
+                  <a href="#">Forgot password?</a><br><br>
+                  <input type="submit" value="login"/> <br>
+                  
+                </form>
+            </div>
+          </div>
+        
         </main>
-
+        <br>
         <footer-component></footer-component>
     </body>
 </html>
