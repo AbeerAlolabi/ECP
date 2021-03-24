@@ -32,7 +32,7 @@
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#"class="current">Admin Login</a></li>
+              <li><a href="#" class="current">Admin Login</a></li>
           </ul>
         </div>
       
@@ -48,15 +48,41 @@
   
                   <label for="password">Password:</label><br>
                   <input type="password" name="password" id="password" /><br>
-                  <a href="#">Forgot password?</a><br><br>
+                  <a href="#" class="continue_reading_btn" id="blog_1_Btn">Forgot password?</a><br><br>
                   <input type="submit" value="login"/> <br>
                   
                 </form>
             </div>
           </div>
-        
+
+        <!-- blog 1 modal -->
+        <div class="modal"id="blog_1_modal">
+
+          <!-- Modal content -->
+          <div class="modal-content forgot_pass">
+            <div class="modal-body ">
+              <div class="container">
+                <div class="row ">
+                  <div class="col-12" >
+                    <form>
+                      <h4><label for="forgot_pass">Please! Enter Your Email:</label></h4>
+                      <input type="email" id="forgot_pass">
+                      <input type="submit" value="reset">
+                    </form>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+              <br>
+   
+          </div>
+
+        </div>
+        <!-- end of blog 1 modal -->
+
         </main>
         <br>
         <footer-component></footer-component>
+        <script src="js/javascript.js"></script>   
     </body>
 </html>

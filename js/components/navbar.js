@@ -5,6 +5,7 @@ class Navbar extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
+      <link rel="icon" href="images/icon.png" type="image/icon type">
         <style>
                 
           .navbar-brand{

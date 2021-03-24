@@ -353,3 +353,58 @@ body.login{
     color:#ff8b00 ;
     font-weight: 600;
 }
+
+.forgot_pass{
+    width: 40%;
+    top: 35%;
+    margin: 0% 18%;
+}
+
+.forgot_pass h4{
+    color: #043F3D;
+}
+
+/* style blog page */
+.blog_Main {
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 22px 14px;
+    color: rgb(4,63,61);
+    text-align: left;
+    background-image: linear-gradient(120deg black transparent );
+
+}
+.blog_Main:hover{
+    box-shadow: 2px 2px 4px grey;
+    position: relative;
+    top: -5px;
+    left: -7px;
+}
+.blog_Main img{
+max-width: 250px;
+width: 100%;
+height: 150px;
+border-radius: 10px;
+border-left: 2px solid rgba(100,100,100,0.5);
+border-right: 2px solid rgba(100,100,100,0.5);
+
+}
+
+.blog_Main h3{
+    color: #ff8b00;
+}
+
+.blog_Main h6{
+    color: black;
+    font-weight: 600;
+}
+
+.blog_Main h6:hover{
+    text-decoration: underline;
+    color: gray;
+    cursor:pointer;
+}
+
+.blog_Main p{
+    color: black;
+}
