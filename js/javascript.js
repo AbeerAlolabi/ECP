@@ -39,3 +39,12 @@ btn.forEach(function(element){
       }
     }
 });
+
+/* Delete Blog Script */
+function deleteBlog(element){
+    var confirmDelete = confirm('Are you sure you want to delete this blog?');
+    if(confirmDelete == true){
+       document.getElementById(element).style.display = "none";
+    }
+}
+

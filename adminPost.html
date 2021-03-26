@@ -24,17 +24,24 @@
         <script src="js/components/footer.js" type="text/javascript"></script>
         <!--navbar components link-->
         <script src="js/components/navbar.js" type="text/javascript"></script>
+        <script src="js/components/sidebar.js" type="text/javascript"></script>
     </head>
 
     <body>
+      <sidebar-component></sidebar-component>
+
+      <div id="main" >
         <navbar-component></navbar-component>
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">Admin Home Page</a></li>
+              <li><a href="adminHomePage.html">Admin Home Page</a></li>
               <li><a href="#" class="current" >Post Plog</a></li>
+              <button class="openbtn openbtn_right" onclick="openNav()">☰ Admin Pages </button>  
+            
           </ul>
         </div>
+      
       
         <main>
           <div class="container userAddBlog ">
@@ -89,5 +96,6 @@
         </main>
 
         <footer-component></footer-component>
-            </body>
+      </div>
+    </body>
 </html>

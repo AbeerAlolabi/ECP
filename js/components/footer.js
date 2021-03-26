@@ -12,6 +12,7 @@ class Footer extends HTMLElement {
                 margin-bottom: 0px;
                 padding: 25px 0px;
                 display: flex;
+                margin-top:10px
             }
             
             footer h3 {
@@ -22,8 +23,6 @@ class Footer extends HTMLElement {
             footer p{
                 color: rgb(151, 155, 152);
             }
-            
-            
             
             .related_sites{
                 color: rgb(151, 155, 152);

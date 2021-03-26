@@ -363,8 +363,11 @@ body.login{
 .forgot_pass h4{
     color: #043F3D;
 }
-
+.forgot_pass span{
+    color: #000;
+}
 /* style blog page */
+
 .blog_Main {
     border: 1px solid gray;
     margin-top: 20px;
@@ -407,4 +410,67 @@ border-right: 2px solid rgba(100,100,100,0.5);
 
 .blog_Main p{
     color: black;
+}
+
+/* admin pages button style */  
+  
+.openbtn {
+    cursor: pointer;
+    background-color: #eee;
+    color: rgb(4,63,61);
+    padding: 10px 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 140px;
+    right: 19px;
+}
+
+.openbtn_right{
+    text-align: right;
+}
+  .openbtn:hover {
+    background-color: rgb(4,63,61);
+    color: white;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* EVENTS PAGE STYLE */
+.event{
+    text-align: center;
+    padding: 30px;
+    border: 1px solid gray;
+    box-shadow: 2px 4px 10px grey;
+    margin: 20px;
+}
+
+#currentDate{
+    color: #777;
+}
+
+/* admin home page style */
+
+.adminHomePage .blog_main{
+    padding-top: 0px;
+}
+.deleteBlogBtn {
+    font-size: 27px;
+    font-weight: 600;
+    float: right;
+    color: #043f3d;
+}
+
+.deleteBlogBtn:hover{
+    color: #333;
 }
