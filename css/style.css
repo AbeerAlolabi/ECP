@@ -404,7 +404,7 @@ border-right: 2px solid rgba(100,100,100,0.5);
 
 .blog_Main h6:hover{
     text-decoration: underline;
-    color: gray;
+    color: rgb(4,63,61);
     cursor:pointer;
 }
 

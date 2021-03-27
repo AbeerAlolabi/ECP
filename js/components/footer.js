@@ -57,8 +57,19 @@ class Footer extends HTMLElement {
             .right_footer p{
                 margin-left: 43px;
             }
+            .socialMedia{
+                background-color: #eee;
+                color: #064e4a;
+                padding: 5px;
+                text-align: center;
+              }
+              .socialMedia i{
+                padding: 10px;
+              }
             </style>
-
+            <!-- font awesome icon link -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
             <footer>
             <div class="container">
             <div class="row justify-content-center">
@@ -86,6 +97,16 @@ class Footer extends HTMLElement {
             </div> 
             </div>
         </footer>
+        <div class="container-fluid ">
+        <div class="row justify-content-center socialMedia">
+          <div class="col-12 col-md-4 ">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color: 	#4267B2;"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size:36px;color: #006192;"></i></a>
+    
+          </div>
+        </div>
+      </div>
         `;
     }
 }
