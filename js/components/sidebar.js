@@ -50,9 +50,9 @@ class Sidebar extends HTMLElement {
         <div class="sidebarLink">
           <a href="adminHomePage.php"> Admin Home Page </a>
           <a href="reviewUserPost.php">Review Users blogs</a>
-          <a href="#">Add A New Event</a>
+          <a href="addNewEvent.php">Add A New Event</a>
           <a href="adminPost.html">Add A New Blog</a>
-          <a href="createAccount.html">Create Account</a>
+          <a href="createAccount.php">Create Account</a>
         </div>
       </div>
         `;}

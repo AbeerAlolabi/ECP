@@ -538,7 +538,9 @@ body.login{
 .deleteBlogBtn:hover{
     color: #333;
 }
-
+#blogBrief, #blogDescription{
+    width: 100%;
+}
 #aboutusimage{
     width: 570px;
       }

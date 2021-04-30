@@ -34,7 +34,7 @@
         <navbar-component></navbar-component>
         <div class="div_breadcrumb">
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#"class="current">Blogs</a></li>
             </ul>
         </div>

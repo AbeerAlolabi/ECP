@@ -112,22 +112,10 @@
       <div class="main_button">
           <a href="blogs.php"><button>Read More Blogs </button></a>
       </div> 
-    </main>
-    <a href="adminHomePage.php">admin home page</a><br>
-    <a href="login.html">login Page</a>  
+    </main>  
           
     <footer-component></footer-component>
     <script src="js/javascript.js"></script>    
   </body>
 </html>
-<!--
-  <div class="container justify-content-center ">
-    <div class="row  justify-content-center">
-      <div class="col-12 ">
-        <br>
-          <h3 class="headline"> What is ECP? &nbsp;&nbsp; &nbsp;&nbsp;</h3>
-        <br>
-      </div>
-    </div>
-  </div>
-​-->​
+​

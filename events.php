@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Us Page</title>
+        <title>ECP Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- bootstrap links -->
@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
+
         <!-- fonts links-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -26,49 +26,49 @@
         <script src="js/components/navbar.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body >
         <navbar-component></navbar-component>
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
               <li><a href="index.php">Home</a></li>
-              <li><a href="#"class="current">Contactus</a></li>
+              <li><a href="#"class="current">Events</a></li>
           </ul>
         </div>
       
         <main>
           <div class="container">
-            <div class="AboutUsFont">
-            <div class="ContactUsForm">
-            <form action="action_page.php">
+            
+            <?php
+              include 'php/db_connection.php';
+              $conn = OpenCon();
 
-              <label for="fname">Your Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email address..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="Europe">Europe</option>
-                <option value="Canada">Canada</option>
-                <option value="USA">USA</option>
-                <option value="Middle East">Middle East</option>
-                <option value="Other">Other</option>
-              </select>
-              <div>
-              <label for="subject"><h5>Subject:</h5></label><br>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-          <br>
-          <div style="text-align: center;">
-              <input id="send" type="submit" value="Send">
-            </div>
-            </form>
-          </div>
+              $sql = "select title, description, data, link from events ";
+              $result = mysqli_query($conn, $sql);
+
+              if(mysqli_num_rows($result)>0){
+                while($row = mysqli_fetch_assoc($result)){
+                  echo "
+                  <div class='event row justify-content-center'>
+                      <div class='card text-center'>
+                      <div class='card-header'>New Events</div>
+                      <div class='card-body'>
+                        <h5 class='card-title'>".$row["title"]."</h5>
+                        <p class='card-text'>
+                        ".$row["description"]." 
+                        </p>
+                        <p>for more details on date and time click on the lick below</p>
+                      </div>
+                      <div class='card-footer text-muted'>".$row["data"]."</div>
+                      <a href='".$row["link"]."'>Event link</a>
+                    </div>
+                  </div>
+                  ";
+                };
+              };
+              ?>
+              </div>
           </div>  
-        </div>
         </main>
-
-        <footer-component></footer-component>
-    </body>
+      <footer-component></footer-component>
+  </body>
 </html>

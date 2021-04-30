@@ -27,7 +27,7 @@
         <script src="js/components/sidebar.js" type="text/javascript"></script>
     </head>
 
-    <body class="adminHomePage">
+    <body class="adminHomePage" onload="checkCookie();">
 
       <sidebar-component></sidebar-component>
 

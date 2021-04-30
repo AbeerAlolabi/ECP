@@ -27,7 +27,7 @@
         <script src="js/components/sidebar.js" type="text/javascript"></script>
     </head>
 
-    <body class="adminHomePage">
+    <body class="adminHomePage" onload="checkCookie();">
 
       <sidebar-component></sidebar-component>
 
@@ -36,7 +36,7 @@
         
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="#"  class="current">Admin Home Page</a></li>
               <button class="openbtn openbtn_right" onclick="openNav()">☰ Admin Pages </button>  
           </ul>
