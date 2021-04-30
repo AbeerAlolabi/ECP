@@ -36,7 +36,7 @@
           <ul class="breadcrumb">
               <li><a href="index.html">Home</a></li>
               <li><a href="adminHomePage.html">Admin Home Page</a></li>
-              <li><a href="#" class="current" >Post Plog</a></li>
+              <li><a href="#" class="current" >Post Blog</a></li>
               <button class="openbtn openbtn_right" onclick="openNav()">☰ Admin Pages </button>  
             
           </ul>
@@ -47,47 +47,62 @@
           <div class="container userAddBlog ">
             <h2> Upload Blog </h2>
             <br>   
-            <form>
+            <form action="php/adminPost.php" method="POST" enctype="multipart/form-data">
               <div class="row justify-content-center">
                 <div class="col-12 col-md-4">
                   <label for="username">Full Name:</label><br>
-                  <input type="text" id="username" title="Blog writer name, use only letters[a-z]" pattern="[A-Za-z]{1,40}" maxlength="40" required/>
+                  <input type="text" id="username" name="username" title="Blog writer name, use only letters[a-z]"  maxlength="40" required/>
                 </div>
                 <div class="col-12 col-md-4">
                   <label for="userEmail">Email:</label><br>
-                  <input type="email" id="userEmail" required placeholder="example@example.com"/> <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ -->
+                  <input type="email" id="userEmail" name="userEmail" required placeholder="example@example.com"/> <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ -->
                 </div>
                 <div class="col-12 col-md-4">
                   <label for="userPhone">Phone:</label><br>
-                  <input type="text" id="userPhone"  pattern="\+[0-9]{3}-[0-9]{3}-[0-9]*" required title="it should be in the form (+333-333-9999)" placeholder="+333-333-4444" />
+                  <input type="text" id="userPhone" name="userPhone" pattern="\+[0-9]{3}-[0-9]{3}-[0-9]*" required title="it should be in the form (+333-333-9999)" placeholder="+333-333-4444" />
                 </div>
               </div>
               <br>
               <div class="row justify-content-center">
                 <div class="col-12 col-md-4">
                   <label for="blogTitle">Title:</label><br>
-                  <input type="text" id="blogTitle" required title="please add a title for the blog"/>
+                  <input type="text" id="blogTitle" name="blogTitle" required title="please add a title for the blog"/>
                 </div>
+
+                <div class="col-12 col-md-4">
+                  <label for="image">Date:</label><br>
+                  <input type="date" id="blogDate" name="blogDate" required title="please add blog date"/>
+                </div>
+
                 <div class="col-12 col-md-4">
                   <label for="image">Image:</label><br>
-                  <input type="file" id="image" title="please upload an image" accept="image/gif, image/jpeg, image/png" required />
+                  <input type="file" id="image" name="image" title="please upload an image" accept="image/gif, image/jpeg, image/png" required />
                 </div>
                 <div class="col-12 col-md-4">
                 </div>
               </div>
               <br>
-              <div class="row justify-content-center">
-                <div class="col-12">
-                  <label for="blogText"> Description:</label><br>
-                  <textarea id="blogText"  rows="5" required>
+              <div class="row ">
+                <div class="col-12 col-md-8">
+                  <label for="blogText">Brief Description:</label><br>
+                  <textarea id="brifeblogText"  name="brifeblogText" rows="2" maxlength="320" placeholder="max number of allowed characters are 300 characters" required>
                   </textarea>
                 </div>
+              </div>
+
+              <br>
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <label for="blogText"> Description:</label><br>
+                    <textarea id="blogText" name="blogText" rows="5" required>
+                    </textarea>
+                  </div>
               </div>
               <br>
               <div class="row" style="text-align: center;">
                 <div class="col-12 ">
                   <input type="reset" value="Cancel"/>
-                  <input type="submit" value="Upload now"/>
+                  <input type="submit" name="submit" id="submit" value="Upload now"/>
                 </div>
               </div>
 
@@ -97,5 +112,6 @@
 
         <footer-component></footer-component>
       </div>
+
     </body>
 </html>

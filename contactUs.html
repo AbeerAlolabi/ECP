@@ -37,8 +37,36 @@
       
         <main>
           <div class="container">
-            
+            <div class="AboutUsFont">
+            <div class="ContactUsForm">
+            <form action="action_page.php">
+
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email address..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="Europe">Europe</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Middle East">Middle East</option>
+                <option value="Other">Other</option>
+              </select>
+              <div>
+              <label for="subject"><h5>Subject:</h5></label><br>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          <br>
+          <div style="text-align: center;">
+              <input id="send" type="submit" value="Send">
+            </div>
+            </form>
+          </div>
           </div>  
+        </div>
         </main>
 
         <footer-component></footer-component>

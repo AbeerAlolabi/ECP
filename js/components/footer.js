@@ -100,9 +100,9 @@ class Footer extends HTMLElement {
         <div class="container-fluid ">
         <div class="row justify-content-center socialMedia">
           <div class="col-12 col-md-4 ">
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color: 	#4267B2;"></i></a>
-            <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size:36px;color: #006192;"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:#064e4a;"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#064e4a;"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size:36px;color:#064e4a;"></i></a>
     
           </div>
         </div>
@@ -112,3 +112,6 @@ class Footer extends HTMLElement {
 }
 
 customElements.define('footer-component', Footer);
+//facebook color :	#4267B2
+//Twitter color : #006192
+

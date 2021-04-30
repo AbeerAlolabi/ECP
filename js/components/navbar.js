@@ -70,7 +70,7 @@ class Navbar extends HTMLElement {
         <nav class="navbar navbar-expand-lg  ">
           <div class="container align-items-end" justify-content-center>
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><img width= "100px" src="images/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.php"><img width= "100px" src="images/logo.png" alt="logo"></a>
             </div>
   
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -79,16 +79,16 @@ class Navbar extends HTMLElement {
             
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="nav navbar-nav ">
-                <li class="active nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+                <li class="active nav-item"><a href="index.php" class="nav-link ">Home</a></li>
                 <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#" class="">About us</a></li>
-                    <li><a href="#">Our Members</a></li>
+                    <li><a href="aboutUs.html" class="">About us</a></li>
+                    <li><a href="ourMember.html">Our Members</a></li>
                   </ul>
                 </li>
-                <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="blogs.php" class="nav-link">Blogs</a></li>
                 <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="contactUs.html" class="nav-link">Contact us</a></li>
               </ul>
             </div>
           </div>

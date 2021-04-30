@@ -40,16 +40,15 @@
           <div class="container ">
             <div class="row justify-content-center ">
               <div class="col-md-5 col-12 Content">
-                <form>
+                <form action="php/login.php" method="POST">
                   <label for="email">
                   Email:
                   </label><br>
                   <input type="email" id="email" name="email" placeholder="example@example.com" /><br><br>
-  
                   <label for="password">Password:</label><br>
                   <input type="password" name="password" id="password" /><br>
                   <a href="#" class="continue_reading_btn" id="blog_1_Btn">Forgot password?</a><br><br>
-                  <input type="submit" value="login"/> <br>
+                  <input type="submit" name="submit" value="login"/> <br>
                   
                 </form>
             </div>

@@ -1,5 +1,5 @@
 body{
-    font-family: Rubik,'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, serif;
 }
 
 /* header */
@@ -7,6 +7,12 @@ body{
 header{
     margin-right: 0px;
     padding-right: 0px;
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15vw;
+    padding-top: 10vw;
+    background-position:center;
 }
 img{
     float: right;
@@ -14,7 +20,7 @@ img{
 }
 
 .right_header{
-    background-image: url('../images/header.jpg');
+    background-image: url('../images/home.jpg');
     background-size: cover; 
     background-position: center;
     border-radius: 3%;
@@ -25,16 +31,29 @@ img{
 
 .left_header{
     margin-top: 1.5%;
-    color: rgb(4,63,61);
+    color: black;
     font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    border-radius: 5%;
   
 }
 
-.left_header h3{
+.left_header button{
     text-align: center;
-    background-color: rgb(9, 153, 144);
+    background-color: #064E4A;
+    font-size: 15px;
     color: rgb(255,254,246);
     border-radius: 5%;
+}
+.left_header button:hover{
+    color: rgb(255,139,0);
+}
+
+.left_header p{
+    text-align: justify;
 }
 
 /* style breadcrumb */
@@ -108,14 +127,12 @@ main > h1 > span{
 
 .blog_main:hover{
     border: 2px solid rgb(255,139,0);
-    position: relative;
-    top: -5px;
-    left: -7px;
-    box-shadow: 5px 7px 5px rgba(4,63,61,0.5);
+
 }
 
 .blog_main h3{
     color: rgb(255,139,0);
+    font-size: 22px;
 }
 
 .blog_main > img{
@@ -139,6 +156,7 @@ main > h1 > span{
     background-color: rgb(9, 153, 144);
     margin: 35px 0px 65px 0px;
     padding: 7px 19px;
+    border:none;
     border-radius: 5%;
 }
 
@@ -158,6 +176,11 @@ main > h1 > span{
 .continue_reading_btn:hover{
     color: rgb(255,139,0);
     border-color: rgb(255,139,0);
+}
+
+.blog_main p{
+    text-align: justify;
+    word-spacing: -3px;
 }
 @media only screen and (max-width: 800px){
 
@@ -180,10 +203,12 @@ main > h1 > span{
     -webkit-animation-duration: 0.2s;
     animation-name: fadeIn;
     animation-duration: 0.2s;
+
   }
   
   /* Modal Content */
   .modal-content {
+      
     position: fixed;
     top:18%;
     left: 12.5%;
@@ -194,6 +219,9 @@ main > h1 > span{
     animation-name: slideIn;
     animation-duration: 0.2s;
     border: 1.5px solid rgb(255,139,0);
+    height: 60%;
+    overflow: scroll;
+
   }
   
   /* The Close Button */
@@ -221,12 +249,19 @@ main > h1 > span{
   .modal-body{
       color: rgb(36, 39, 39);
       font-size: large;
+      
   }
 
-  .img_modal{
-        max-width: 400px;
-        width: 100%;
-  }
+  .modal-body p{
+      text-align: justify;
+}
+.modal-body h5{
+    text-align: right;
+    color: grey;
+}
+  .img_modal {
+    width: 100%;
+}
   /* Add Animation */
   @-webkit-keyframes slideIn {
     from {bottom: -300px; opacity: 0} 
@@ -296,6 +331,9 @@ textarea{
     width: 88%;
 }
 
+#brifeblogText{
+    width: 85%;
+}
 .userAddBlog h2{
     text-align: center;
     color: white;
@@ -375,25 +413,24 @@ body.login{
     color: rgb(4,63,61);
     text-align: left;
     background-image: linear-gradient(120deg black transparent );
+    
 
 }
 .blog_Main:hover{
-    box-shadow: 2px 2px 4px grey;
-    position: relative;
-    top: -5px;
-    left: -7px;
+    box-shadow: 1px 1px 4px grey;
 }
+
 .blog_Main img{
-max-width: 250px;
-width: 100%;
-height: 150px;
-border-radius: 10px;
-border-left: 2px solid rgba(100,100,100,0.5);
-border-right: 2px solid rgba(100,100,100,0.5);
 
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border-left: 2px solid rgba(100,100,100,0.5);
+    border-right: 2px solid rgba(100,100,100,0.5);
 }
 
-.blog_Main h3{
+.blog_Main h4{
     color: #ff8b00;
 }
 
@@ -410,6 +447,12 @@ border-right: 2px solid rgba(100,100,100,0.5);
 
 .blog_Main p{
     color: black;
+}
+
+.edit_btn{
+    background-color: #444;
+    border-radius: 5px;
+    color: white;
 }
 
 /* admin pages button style */  
@@ -439,6 +482,24 @@ border-right: 2px solid rgba(100,100,100,0.5);
     transition: margin-left .5s;
     padding: 16px;
   }
+
+  .blog_Main .modal-body img{
+      width: 100%;
+      max-width: inherit;
+      height: auto;
+      display: block;
+  }
+  .blog_Main>img{
+      float: right;
+      border-radius: 5px;
+  }
+  .blog_Main>h3{
+      display: inline;
+      color: #ff8b00;
+      width: 75%;
+  }
+
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -467,10 +528,24 @@ border-right: 2px solid rgba(100,100,100,0.5);
 .deleteBlogBtn {
     font-size: 27px;
     font-weight: 600;
-    float: right;
     color: #043f3d;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 2px;
 }
 
 .deleteBlogBtn:hover{
     color: #333;
 }
+
+#aboutusimage{
+    width: 570px;
+      }
+
+.AboutUsFont{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    color: rgb(4,63,61);
+}
+

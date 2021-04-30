@@ -48,11 +48,11 @@ class Sidebar extends HTMLElement {
         <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div class="sidebarLink">
-          <a href="adminHomePage.html"> Admin Home Page </a>
-          <a href="#">Review User's Post</a>
+          <a href="adminHomePage.php"> Admin Home Page </a>
+          <a href="reviewUserPost.php">Review Users blogs</a>
           <a href="#">Add A New Event</a>
-          <a href="adminPost.html">Create A Blog</a>
-          <a href="#">Create Account</a>
+          <a href="adminPost.html">Add A New Blog</a>
+          <a href="createAccount.html">Create Account</a>
         </div>
       </div>
         `;}
