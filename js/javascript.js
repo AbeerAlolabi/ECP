@@ -86,3 +86,20 @@ function setCookie(cname, cvalue, exdays) {
       window.location.replace("index.php");
       }
     }
+
+/*ouer member*/
+  var list=document.getElementById("list");
+  document.getElementById("continueReading").addEventListener("click",function(item){
+    
+    if(document.getElementById("continueReading").innerText=="Hide"){
+      
+        list.style.display="none";
+        document.getElementById("continueReading").innerText="Show All";
+
+    }else{
+      list.style.display="flex";
+      document.getElementById("continueReading").innerText="Hide";
+    }
+  });
+
+    

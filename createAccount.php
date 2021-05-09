@@ -27,7 +27,7 @@
         <script src="js/components/navbar.js" type="text/javascript"></script>
     </head>
 
-    <body onload="checkCookie();">
+    <body onload="checkCookie(); note();">
         <navbar-component></navbar-component>
         <div class="div_breadcrumb">
           <ul class="breadcrumb">
@@ -37,19 +37,35 @@
           </ul>
         </div>
       
-        <main class="login">
+        <main>
           <div class="container ">
             <div class="row justify-content-center ">
-              <div class="col-md-5 col-12 Content">
+              <div class="col-md-7 col-12 signup">
                 <form action="" method="POST">
-                  <label for="name">Name:</label><br>
-                  <input type="text" id="name" name="name" placeholder="your full name" /><br><br>
-                  <label for="email">Email:</label><br>
-                  <input type="email" id="email" name="email" placeholder="example@example.com" /><br><br>
-  
-                  <label for="password">Password:</label><br>
-                  <input type="password" name="password" id="password" /><br><br>
-                  <input type="submit" name="submit" value="sign up"/> <br>
+                  <div class="row">
+                    <div class="col-md-6 col-12 ">
+                      <label for="name">Name:</label><br>
+                      <input type="text" id="name" name="name" placeholder="your full name"  required/><br><br>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required /><br><br>
+                    </div>
+                  </div>
+               
+                  <div class="row">
+                    <div class="col-md-6 col-12">
+                      <label for="password">Password:</label><br>
+                      <input type="password" name="password" id="password" required/><br><br>
+                      
+                   </div>
+                    <div class="col-md-6 col-12">
+                        <label for="passwordCon">Confirm Password:</label><br>
+                        <input type="password" name="passwordCon" id="passwordCon" onblur="testpassword2();"required/><br><br>
+                        <p id="message"></p>
+                   </div>
+                  </div>
+                  <input type="submit" name="submit" id="submit" value="sign up" disabled="true"/> <br>
                   
                 </form>
             </div>
@@ -59,7 +75,6 @@
           <?php
             include 'php/db_connection.php';
             $conn = OpenCon();
-            echo "Connected Successfully";
 
             if(isset($_POST["submit"])){
                 $email = $_POST["email"];
@@ -81,7 +96,27 @@
 
              }
 ?>
+        <script>
+          function note(){
+            alert("please, make sure to create unforgettabel passowrd");
+          }
+          function testpassword2() {
+              var text1 = document.getElementById("password");
+              var text2 = document.getElementById("passwordCon");
+              if (text1.value == text2.value){
+                text1.style.borderColor = "#2EFE2E"; 
+                text2.style.borderColor = "#2EFE2E"; 
+                document.getElementById('submit').disabled = false;
+              }
+              else{
+                text1.style.borderColor = "red";
+                text2.style.borderColor = "red";
+                document.getElementById('submit').disabled = true;
+
+              }
+          }
+        </script>
         <footer-component></footer-component>
-        <script src="js/javascript.js"></script>   
+        <script src="js/javascript.js"></script> 
     </body>
 </html>

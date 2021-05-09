@@ -40,7 +40,7 @@
                   <p>
                       The Education,Conflict and Peacebuilding (ECP) Interest Group includes graduate students, faculty, and practitioners, who are all exploring the intersection between education, peace, conflict, and development.ECP conducts monthly meetings that involve a deep and critical exploration into a current issue or topic within the field.
                    </p>
-                   <a href="#"><button>Continue Reading</button></a>
+                   <a href="aboutUs.html"><button>Continue Reading</button></a>
               </div>
               
           
@@ -59,7 +59,7 @@
               include 'php/db_connection.php';
               $conn = OpenCon();
 
-              $sql = "select title, briefDescription, Description, nameOfUser, image from blogs where status='approved'";
+              $sql = "select title, briefDescription, Description, nameOfUser, image from blogs  where status='approved' ORDER BY blogId LIMIT 3";
 
               $result = mysqli_query($conn, $sql);
               

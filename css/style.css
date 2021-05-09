@@ -49,11 +49,15 @@ img{
     border-radius: 5%;
 }
 .left_header button:hover{
-    color: rgb(255,139,0);
+    border-color: #064E4A;
+    box-shadow: 2px 2px 3px gray;
+
 }
 
 .left_header p{
     text-align: justify;
+    white-space: pre-line;
+    letter-spacing: -1px;
 }
 
 /* style breadcrumb */
@@ -550,4 +554,64 @@ body.login{
     font-style: normal;
     color: rgb(4,63,61);
 }
+
+.signup{
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid #ff8b00;
+    padding: 5vh;
+    border-radius: 1%;
+     margin: 8vh auto !important;
+    margin: 5px auto;
+    text-align: left;
+    box-shadow: 2px 1px 4px grey;
+}
+
+.person{
+    text-align: center;
+    border: 0.5px solid rgb(4,63,61);
+    border-radius: 3%;
+    padding: 25px 0px 25px 0px ;
+    margin:25px 10px 0px 10px ;
+    vertical-align: baseline;
+    height: 340px;
+}
+
+.person h4, .developer h4{
+    color: #ff8b00;
+    text-shadow: 1px 1px 1px gray;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    font-weight: bolder;
+ }
+
+ .person p, .developer p{
+    font-weight: 600;
+    text-align:-webkit-match-parent;
+    padding: 0px 30px 0px 30px;
+ }
+
+ #list{
+  display: none;
+ }
+#continueReading{
+    border-radius: 5px;
+    border: 1px solid #ff8b00;
+    padding: 2ps 10px 2px 10px;
+    color: #ff8b00;
+    font-weight: 620;
+}
+#continueReading:hover{
+    background-color: #ff8b00;
+    color:white;
+}
+
+ .developer{
+    text-align: center;
+    border: 0.5px solid #ff8b00;
+    border-radius: 3%;
+    padding: 25px 0px 25px 0px ;
+    margin:25px 10px 0px 10px ;
+    height: 200px;
+ }
 
